@@ -8,3 +8,5 @@ class Smurf(models.Model):
     name = models.CharField(max_length=300)
     age = models.CharField(max_length=200)
     height = models.CharField(max_length=80)
+    created_at = models.DateTimeField(auto_now_add=True)
+    last_modified = models.DateTimeField(auto_now=True)
